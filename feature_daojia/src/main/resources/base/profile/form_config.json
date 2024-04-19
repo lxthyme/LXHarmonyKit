@@ -20,6 +20,28 @@
       "supportDimensions": [
         "2*2"
       ]
+    },
+    {
+      "name": "widget_dynamic_hw_4v4",
+      "displayName": "$string:widget_dynamic_hw_4v4_display_name",
+      "description": "$string:widget_dynamic_hw_4v4_desc",
+      "src": "./ets/widget_dynamic_hw_4v4/pages/Widget_dynamic_hw_4v4Card.ets",
+      "uiSyntax": "arkts",
+      "window": {
+        "designWidth": 720,
+        "autoDesignWidth": true
+      },
+      "colorMode": "auto",
+      "isDynamic": true,
+      "isDefault": false,
+      "updateEnabled": false,
+      "scheduledUpdateTime": "10:30",
+      "updateDuration": 1,
+      "defaultDimension": "4*4",
+      "supportDimensions": [
+        "2*2",
+        "4*4"
+      ]
     }
   ]
 }

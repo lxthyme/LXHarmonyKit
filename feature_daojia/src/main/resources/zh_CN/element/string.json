@@ -43,6 +43,14 @@
     {
       "name": "widget_static_hw_display_name",
       "value": "Static Widget for HelloWorld"
+    },
+    {
+      "name": "widget_dynamic_hw_4v4_desc",
+      "value": "Dynamic Widget 4v4 from HelloWorld template"
+    },
+    {
+      "name": "widget_dynamic_hw_4v4_display_name",
+      "value": "Dynamic Widget 4v4, HelloWorld"
     }
   ]
 }
