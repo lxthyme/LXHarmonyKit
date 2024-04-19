@@ -95,6 +95,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ability_category",
+      "srcPath": "./ability_category",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }
