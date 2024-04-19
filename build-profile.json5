@@ -131,6 +131,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ability_list",
+      "srcPath": "./ability_list",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }
