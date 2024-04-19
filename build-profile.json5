@@ -43,6 +43,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "library_share_common",
+      "srcPath": "./library_share_common",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }
