@@ -51,6 +51,19 @@
         "name": "WorkScheduler_Classify",
         "srcEntry": "./ets/workscheduler_classify/WorkScheduler_Classify.ets",
         "type": "workScheduler"
+      },
+      {
+        "name": "ability_widget_static_hw",
+        "srcEntry": "./ets/ability_widget_static_hw/ability_widget_static_hw.ets",
+        "label": "$string:ability_widget_static_hw_label",
+        "description": "$string:ability_widget_static_hw_desc",
+        "type": "form",
+        "metadata": [
+          {
+            "name": "ohos.extension.form",
+            "resource": "$profile:form_config"
+          }
+        ]
       }
     ]
   }

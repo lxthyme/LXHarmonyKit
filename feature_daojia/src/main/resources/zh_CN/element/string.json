@@ -27,6 +27,22 @@
     {
       "name": "accessibility_classify_label",
       "value": "label"
+    },
+    {
+      "name": "ability_widget_static_hw_desc",
+      "value": "form_description"
+    },
+    {
+      "name": "ability_widget_static_hw_label",
+      "value": "form_label"
+    },
+    {
+      "name": "widget_static_hw_desc",
+      "value": "Widget 2x2 used HelloWorld template"
+    },
+    {
+      "name": "widget_static_hw_display_name",
+      "value": "Static Widget for HelloWorld"
     }
   ]
 }
