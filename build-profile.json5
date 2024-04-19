@@ -59,6 +59,18 @@
     {
       "name": "library_static_common",
       "srcPath": "./library_static_common"
+    },
+    {
+      "name": "ability_about",
+      "srcPath": "./ability_about",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }
