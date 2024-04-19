@@ -143,6 +143,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ability_login",
+      "srcPath": "./ability_login",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }
