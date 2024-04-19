@@ -167,6 +167,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ability_splash_screen",
+      "srcPath": "./ability_splash_screen",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,28 @@
+{
+  "module": {
+    "name": "ability_splash_screen",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "Ability_splash_screen",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "Ability_splash_screen",
+        "srcEntry": "./ets/ability_splash_screen/Ability_splash_screen.ets",
+        "description": "$string:ability_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:ability_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}
