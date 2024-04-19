@@ -1,6 +1,6 @@
 @Component
 export struct MainPage {
-  @State message: string = 'Hello World';
+  @State message: string = 'Hello World library_static_common';
 
   build() {
     Row() {

@@ -1,7 +1,7 @@
 @Entry
 @Component
 struct EmptyPage {
-  @State message: string = 'Hello World';
+  @State message: string = 'Hello World feature_daojia';
 
   build() {
     Row() {

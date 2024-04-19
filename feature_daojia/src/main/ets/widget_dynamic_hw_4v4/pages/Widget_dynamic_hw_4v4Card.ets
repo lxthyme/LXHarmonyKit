@@ -4,7 +4,7 @@ struct Widget_dynamic_hw_4v4Card {
   /*
    * The title.
    */
-  readonly TITLE: string = 'Hello World';
+  readonly TITLE: string = 'Hello World Dynamic 4v4 Card';
   /*
    * The action type.
    */

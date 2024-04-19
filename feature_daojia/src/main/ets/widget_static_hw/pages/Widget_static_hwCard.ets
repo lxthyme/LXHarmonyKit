@@ -4,7 +4,7 @@ struct Widget_static_hwCard {
   /*
    * The title.
    */
-  readonly TITLE: string = 'Hello World';
+  readonly TITLE: string = 'Hello World Static 2v2 Card';
   /*
    * The action type.
    */
