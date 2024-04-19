@@ -1,0 +1,28 @@
+{
+  "module": {
+    "name": "ability_grid",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "Ability_grid",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "Ability_grid",
+        "srcEntry": "./ets/ability_grid/Ability_grid.ets",
+        "description": "$string:ability_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:ability_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

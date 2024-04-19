@@ -119,6 +119,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ability_grid",
+      "srcPath": "./ability_grid",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }
