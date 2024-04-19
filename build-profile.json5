@@ -83,6 +83,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ability_bussiness_card",
+      "srcPath": "./ability_bussiness_card",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }
