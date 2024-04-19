@@ -7,6 +7,10 @@
     {
       "name": "item_title_font",
       "value": "#E6000000"
+    },
+    {
+      "name": "login_background",
+      "value": "#F1F3F5"
     }
   ]
 }

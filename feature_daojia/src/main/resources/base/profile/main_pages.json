@@ -1,6 +1,7 @@
 {
   "src": [
     "pages/Index",
-    "pages/EmptyPage"
+    "pages/EmptyPage",
+    "pages/AccountPage"
   ]
 }
