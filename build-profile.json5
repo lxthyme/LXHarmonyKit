@@ -71,6 +71,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ability_account",
+      "srcPath": "./ability_account",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }
