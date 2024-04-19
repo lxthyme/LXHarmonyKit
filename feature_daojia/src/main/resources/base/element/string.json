@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "Feature_daojiaAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "Feature_daojiaAbility_label",
+      "value": "label"
+    }
+  ]
+}

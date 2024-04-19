@@ -1,0 +1,28 @@
+{
+  "module": {
+    "name": "feature_daojia",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "Feature_daojiaAbility",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "Feature_daojiaAbility",
+        "srcEntry": "./ets/feature_daojiaability/Feature_daojiaAbility.ets",
+        "description": "$string:Feature_daojiaAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:Feature_daojiaAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}
