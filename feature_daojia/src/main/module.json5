@@ -46,6 +46,11 @@
             "resource": "$profile:accessibility_classify"
           }
         ]
+      },
+      {
+        "name": "WorkScheduler_Classify",
+        "srcEntry": "./ets/workscheduler_classify/WorkScheduler_Classify.ets",
+        "type": "workScheduler"
       }
     ]
   }
