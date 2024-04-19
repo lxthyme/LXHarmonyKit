@@ -11,6 +11,14 @@
     {
       "name": "Feature_daojiaAbility_label",
       "value": "label"
+    },
+    {
+      "name": "ability_classify_desc",
+      "value": "description"
+    },
+    {
+      "name": "ability_classify_label",
+      "value": "label"
     }
   ]
 }

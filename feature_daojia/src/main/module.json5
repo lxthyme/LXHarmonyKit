@@ -22,6 +22,15 @@
         "startWindowIcon": "$media:startIcon",
         "startWindowBackground": "$color:start_window_background",
         "exported": true
+      },
+      {
+        "name": "ability_classify",
+        "srcEntry": "./ets/ability_classify/ability_classify.ets",
+        "description": "$string:ability_classify_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:ability_classify_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background"
       }
     ]
   }
