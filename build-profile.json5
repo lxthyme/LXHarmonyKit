@@ -107,6 +107,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ability_category_list",
+      "srcPath": "./ability_category_list",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }
