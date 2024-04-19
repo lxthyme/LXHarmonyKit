@@ -32,6 +32,21 @@
         "startWindowIcon": "$media:startIcon",
         "startWindowBackground": "$color:start_window_background"
       }
+    ],
+    "extensionAbilities": [
+      {
+        "name": "accessibility_classify",
+        "srcEntry": "./ets/accessibility_classify/accessibility_classify.ets",
+        "description": "$string:accessibility_classify_desc",
+        "label": "$string:accessibility_classify_label",
+        "type": "accessibility",
+        "metadata": [
+          {
+            "name": "ohos.accessibleability",
+            "resource": "$profile:accessibility_classify"
+          }
+        ]
+      }
     ]
   }
 }

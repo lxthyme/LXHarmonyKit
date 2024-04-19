@@ -19,6 +19,14 @@
     {
       "name": "ability_classify_label",
       "value": "label"
+    },
+    {
+      "name": "accessibility_classify_desc",
+      "value": "description"
+    },
+    {
+      "name": "accessibility_classify_label",
+      "value": "label"
     }
   ]
 }
