@@ -5,6 +5,20 @@
   "main": "",
   "author": "",
   "license": "",
-  "dependencies": {}
+  "dependencies": {
+//    '@ohos/ability_about': 'file:./../ability_about',
+//    '@ohos/ability_account': 'file:./../ability_account',
+//    '@ohos/ability_bussiness_card': 'file:./../ability_bussiness_card',
+//    '@ohos/ability_category': 'file:./../ability_category',
+//    '@ohos/ability_category_list': 'file:./../ability_category_list',
+//    '@ohos/ability_grid': 'file:./../ability_grid',
+//    '@ohos/ability_list': 'file:./../ability_list',
+//    '@ohos/ability_login': 'file:./../ability_login',
+//    '@ohos/ability_map': 'file:./../ability_map',
+//    '@ohos/ability_splash_screen': 'file:./../ability_splash_screen',
+//    '@ohos/feature_daojia': 'file:./../feature_daojia',
+    '@ohos/library_share_common': 'file:./../library_share_common',
+    '@ohos/library_static_common': 'file:./../library_static_common'
+  }
 }
 

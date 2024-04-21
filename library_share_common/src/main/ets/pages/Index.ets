@@ -1,6 +1,6 @@
 @Entry
 @Component
-struct Index {
+export struct Index {
   @State message: string = 'Hello World library_share_common';
 
   build() {
