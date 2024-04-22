@@ -3,12 +3,15 @@ import { getAllLibraryList } from '../vm/LibraryInfo';
 import { common } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { showAbilityInfo } from '@ohos/library_share_common/src/main/ets/plugins/RouterKit';
+import { BuilderNameConstants, buildRouterModel, RouterModule, RouterNameConstants } from '@ohos/library_router/Index';
 
+// import {} from
 @Entry
 @Component
 struct ListPage {
   @State currentSelectedIndex: number = 0;
   private context?: common.UIAbilityContext
+  @State entryHapRouter: NavPathStack = new NavPathStack();
 
   // @State break
   // aboutToAppear() {
@@ -16,6 +19,15 @@ struct ListPage {
   // }
   aboutToAppear(): void {
     this.context = getContext(this) as common.UIAbilityContext
+    if(!this.entryHapRouter) {
+      this.entryHapRouter = new NavPathStack();
+    }
+    RouterModule.createRouter(RouterNameConstants.Entry_Hap, this.entryHapRouter);
+  }
+
+  @Builder
+  routerMap(builderName: string, param: object) {
+    RouterModule.getBuilder(builderName).builder(param);
   }
 
   build() {
@@ -45,6 +57,7 @@ struct ListPage {
     //   .margin({ left: 15, right: 15 })
     // }
     // .backgroundColor('#F2FAFAFA')
+    Navigation(this.entryHapRouter) {
     Column() {
       List() {
         LazyForEach(getAllLibraryList(), (item: string) => {
@@ -65,21 +78,29 @@ struct ListPage {
             // let url = `@bundle:com.lx.hw.LXHarmonyKit/${item}/ets/pages/Index`
             // await gotoPage(url)
             // showAbilityInfo(this.context?.abilityInfo)
-            if(this.context){
-              // console.log(`-->start233`)
-              this.context.startAbility({
-                bundleName: "com.lx.hw.LXHarmonyKit",
-                abilityName: item,
-              }).then(() => {
-                // console.info('LXHarmonyKit', '-->start video ability success')
-              }).catch((error: BusinessError) => {
-                console.error('LXHarmonyKit', `-->start ${item}[${error.code}] failure: ${error.message}`)
-              })
-            }
+
+            // if (this.context) {
+            //   // console.log(`-->start233`)
+            //   this.context.startAbility({
+            //     bundleName: "com.lx.hw.LXHarmonyKit",
+            //     abilityName: item,
+            //   }).then(() => {
+            //     // console.info('LXHarmonyKit', '-->start video ability success')
+            //   }).catch((error: BusinessError) => {
+            //     console.error('LXHarmonyKit', `-->start ${item}[${error.code}] failure: ${error.message}`)
+            //   })
+            // }
+
+            // buildRouterModel(RouterNameConstants.Entry_Hap, BuilderNameConstants.library_share_common, new Object({
+            //   origin: 'Entry'
+            // }))
           })
         })
       }
     }
+    }
+    .title('feature list')
+    .navDestination(this.routerMap);
   }
 
   @Builder

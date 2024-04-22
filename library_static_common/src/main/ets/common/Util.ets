@@ -65,14 +65,17 @@ export function startMode(wantParameters: Record<string, string|number>, ability
   Logger.info(TAG, `${abilityName} end`)
 }
 
-export function totast() {
+export function toast(msg: string, callback?: () => void) {
   AlertDialog.show(
     {
-      message: $r('app.string.totast'),
+      message: msg,
       secondaryButton: {
         value: 'ok',
         action: () => {
           Logger.info(TAG, 'Callback when the second button is clicked')
+          if(callback) {
+            callback()
+          }
         }
       }
     }
