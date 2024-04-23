@@ -17,9 +17,11 @@
 //    '@ohos/ability_map': 'file:./../ability_map',
 //    '@ohos/ability_splash_screen': 'file:./../ability_splash_screen',
 //    '@ohos/feature_daojia': 'file:./../feature_daojia',
-    '@ohos/library_share_common': 'file:./../library_share_common',
-    '@ohos/library_static_common': 'file:./../library_static_common',
-    '@ohos/library_router': 'file:./../library_router'
+    '@ohos/library_share_common': 'file:../library_share_common',
+    '@ohos/library_static_common': 'file:../library_static_common',
+    '@ohos/library_router': 'file:../library_router',
+    '@ohos/hara': 'file:../harA'
+//    '@ohos/libraryCommon': 'file:../libraryCommon'
   }
 }
 

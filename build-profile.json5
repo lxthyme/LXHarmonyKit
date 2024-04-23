@@ -183,6 +183,10 @@
     {
       "name": "library_router",
       "srcPath": "./library_router"
+    },
+    {
+      "name": "harA",
+      "srcPath": "./harA"
     }
   ]
 }
