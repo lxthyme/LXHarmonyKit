@@ -1,5 +1,6 @@
 // import Logger from '@ohos/library_static_common'
 import { RouterModel } from '../model/RouterModel';
+import { logger } from './../constants/RouterConstants'
 
 export class RouterModule {
   static builderMap = new Map<string, WrappedBuilder<[object]>>();
@@ -9,10 +10,10 @@ export class RouterModule {
     RouterModule.builderMap.set(builderName, builder);
   }
 
-  public static getBuilder(builderName: string): WrappedBuilder<[object]> {
+  public static getBuilder(builderName: string): WrappedBuilder<[object]> | undefined {
     const builder = RouterModule.builderMap.get(builderName);
     if(!builder) {
-      // Logger.info('not found builder ' + builderName);
+      logger.info('not found builder ' + builderName);
     }
     return builder as WrappedBuilder<[object]>;
   }
@@ -26,10 +27,24 @@ export class RouterModule {
   }
 
   public static async push(router: RouterModel): Promise<void> {
-    const harName = router.builderName.split('_')[0];
-    await import (harName).then((ns: ESObject): Promise<void> => ns.harInit(router.builderName));
-    RouterModule.getRouter(router.routerName)
-      .pushPath({ name: router.builderName, param: router.params });
+    // const harName = router.builderName.split('_')[0];
+    const harName = router.builderName;
+    let isImportSucceed = false;
+    await import (harName)
+      // .then((ns: ESObject): Promise<void> => ns.harInit(router.builderName));
+      .then((ns: ESObject): Promise<void> => {
+        logger.info(`-->[push]harInit`)
+        isImportSucceed = true
+        return ns.harInit(router.builderName)
+      })
+      .catch((error: Error) => {
+        logger.error(`-->[push]error: ${error}`)
+      })
+    if(isImportSucceed) {
+      RouterModule
+        .getRouter(router.routerName)
+        .pushPath({ name: router.builderName, param: router.params });
+    }
   }
 
   public static pop(routerName: string) {
