@@ -29,18 +29,22 @@ export class RouterModule {
   public static async push(router: RouterModel): Promise<void> {
     // const harName = router.builderName.split('_')[0];
     const harName = router.builderName;
+    let isImportSucceed = false;
     await import (harName)
       // .then((ns: ESObject): Promise<void> => ns.harInit(router.builderName));
       .then((ns: ESObject): Promise<void> => {
         logger.info(`-->[push]harInit`)
+        isImportSucceed = true
         return ns.harInit(router.builderName)
       })
       .catch((error: Error) => {
         logger.error(`-->[push]error: ${error}`)
       })
-    RouterModule
-      .getRouter(router.routerName)
-      .pushPath({ name: router.builderName, param: router.params });
+    if(isImportSucceed) {
+      RouterModule
+        .getRouter(router.routerName)
+        .pushPath({ name: router.builderName, param: router.params });
+    }
   }
 
   public static pop(routerName: string) {
