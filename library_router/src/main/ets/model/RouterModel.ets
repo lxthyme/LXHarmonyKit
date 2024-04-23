@@ -1,3 +1,4 @@
+import { RouterModule } from '../utils/RouterModule';
 
 export class RouterModel {
   builderName: string = '';
@@ -10,5 +11,5 @@ export const buildRouterModel = (routerName: string, builderName: string, params
   router.builderName = builderName;
   router.routerName = routerName;
   router.params = params;
-  // RouterM
+  RouterModule.push(router)
 }

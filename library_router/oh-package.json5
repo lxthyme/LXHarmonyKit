@@ -6,6 +6,6 @@
   "author": "",
   "license": "Apache-2.0",
   "dependencies": {
-    '@ohos/library_static_common': 'file:./../library_static_common'
+//    '@ohos/library_static_common': 'file:./../library_static_common'
   }
 }
