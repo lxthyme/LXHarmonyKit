@@ -91,9 +91,9 @@ struct ListPage {
             //   })
             // }
 
-            // buildRouterModel(RouterNameConstants.Entry_Hap, BuilderNameConstants.library_share_common, new Object({
-            //   origin: 'Entry'
-            // }))
+            buildRouterModel(RouterNameConstants.Entry_Hap, BuilderNameConstants.HARA_A1, new Object({
+              origin: 'Entry'
+            }))
           })
         })
       }

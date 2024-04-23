@@ -45,8 +45,8 @@ export class RouterModule {
 
   // Jumping to a Specified Page by Obtaining the Page Stack.
   public static async push(router: RouterModel): Promise<void> {
-    // const harName = router.builderName.split('_')[0];
-    const harName = router.builderName
+    const harName = router.builderName.split('_')[0];
+    // const harName = router.builderName
       // Dynamically import the page to be redirected to.
     await import(harName)
       .then((ns: ESObject): Promise<void> => {
