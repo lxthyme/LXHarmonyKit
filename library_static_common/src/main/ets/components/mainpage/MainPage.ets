@@ -1,4 +1,6 @@
-import { BuilderNameConstants, RouterModule, RouterNameConstants } from '@ohos/library_router/Index';
+import { BuilderNameConstants, DynamicRouter,
+  RouterInfo,
+  RouterModule, RouterNameConstants } from '@ohos/library_router/Index';
 
 @Component
 export struct MainPage {
@@ -18,7 +20,7 @@ export struct MainPage {
 }
 
 @Builder
-export function indexBuilder(value: object) {
+export function indexBuilder(value: ESObject) {
   NavDestination() {
     MainPage()
   }
@@ -34,3 +36,6 @@ if(!RouterModule.getBuilder(builderName)) {
   const builder: WrappedBuilder<[object]> = wrapBuilder(indexBuilder)
   RouterModule.registerBuilder(builderName, builder)
 }
+
+// 动态路由第一次加载当前页面时调用，创建WrappedBuilder对象，并注册到路由中
+DynamicRouter.registerRouterPage(RouterInfo.library_static_common_MainPage, wrapBuilder(indexBuilder))

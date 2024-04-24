@@ -15,6 +15,9 @@
 
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
+/**
+ * 日志打印类
+ */
 export class Logger {
   private domain: number
   private prefix: string
@@ -23,6 +26,7 @@ export class Logger {
   constructor(prefix: string) {
     this.prefix = prefix
     this.domain = 0x00FF
+    this.format.toUpperCase();
   }
 
   debug(...args: any[]) {
