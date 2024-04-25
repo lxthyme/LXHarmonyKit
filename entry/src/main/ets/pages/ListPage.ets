@@ -3,7 +3,10 @@ import { getAllLibraryList } from '../vm/LibraryInfo';
 import { common } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { showAbilityInfo } from '@ohos/library_share_common/src/main/ets/plugins/RouterKit';
-import { BuilderNameConstants, buildRouterModel, RouterModule, RouterNameConstants } from '@ohos/library_router/Index';
+import { BuilderNameConstants, buildRouterModel,
+  DynamicRouter,
+  RouterInfo,
+  RouterModule, RouterNameConstants } from '@ohos/library_router/Index';
 
 @Entry
 @Component
@@ -73,7 +76,9 @@ Navigation(this.entryHapRouter) {
           .padding(10)
           .backgroundColor(Color.Orange)
           .onClick(async () => {
-            if(item.includes('library_static_common')) {
+            if(item === 'Ability_aboutAbility') {
+              DynamicRouter.push(RouterInfo.library_static_common_MainPage, 'RouterInfo.library_static_common_MainPage')
+            } else if(item.includes('library_static_common')) {
               let builderName = BuilderNameConstants.library_static_common
               builderName = BuilderNameConstants.library_share_common
               builderName = `@ohos/${item}`

@@ -8,6 +8,14 @@
         "compileSdkVersion": "4.1.0(11)",
         "compatibleSdkVersion": "4.1.0(11)",
         "runtimeOS": "HarmonyOS",
+      },
+      {
+        "name": "tablet_product",
+        "bundleName": "com.lx.hw.LXHarmonyKit.tablet",
+        "signingConfig": "tablet",
+        "compileSdkVersion": "4.1.0(11)",
+        "compatibleSdkVersion": "4.1.0(11)",
+        "runtimeOS": "HarmonyOS",
       }
     ],
     "buildModeSet": [
@@ -29,7 +37,13 @@
           "applyToProducts": [
             "default"
           ]
-        }
+        },
+//        {
+//          "name": "tablet_target",
+//          "applyToProducts": [
+//            "tablet_product"
+//          ]
+//        }
       ]
     },
     {
