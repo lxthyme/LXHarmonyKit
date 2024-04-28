@@ -126,7 +126,8 @@ struct Index {
           // url = '@bundle:com.lx.hw.LXHarmonyKit/library_static_common/ets/pages/Index'
           url = 'pages/ListPage'
           console.log(`-->start at: ${url}`)
-          await gotoPage(url)
+          // await gotoPage(url)
+          DynamicRouter.push(RouterInfo.library_static_common_MainPage, 'RouterInfo.library_static_common_MainPage')
           // router.pushNamedRoute({
           //   // name: 'library_static_common',
           //   name: 'ability_about'
